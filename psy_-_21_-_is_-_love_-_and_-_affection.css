@@ -1,5 +1,305 @@
-body{margin:0px;}
-.harekrishna{padding:5%;background:yellow;position:absolute;width:90%;height:90%;}
-.mantra{position: fixed; top:0px; left:0px;font-size:108px;opacity:.2;}
+body{margin:0px;overflow: hidden;}
+.harekrishna{padding:5%;background:#007cff;position:absolute;width:90%;height:90%;animation: bgchange2 2s infinite alternate; }
+
+.mantra {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    font-size: 108px;
+    opacity: .2;
+    z-index: 0;
+    animation: 4s scroll infinite linear;
+    line-height: 104px;
+    color: #fff;
+}
+.logo {background:#000;animation: bgchange 5s infinite alternate;width: 40%;height: 180px;z-index: 9999999;position: fixed;top: 10%;left: 27%;text-align: center;transform: scale(0.7);}
+.logo p{color:#fff;font: bold italic 120px 'Century Gothic';margin: 0;position: absolute;left: 10%;}
+.logo p:nth-child(2) {
+    color: red;
+    left: 7%;
+    font-size: 128px;
+    top: -3px;
+      animation: colorchange2 2s infinite alternate;
+         opacity:0.5;
+}
+.logo p:nth-child(1) {
+      color: #00ff74;
+      font-size: 130px;
+      left: 48px;
+      top: -2px;
+      animation: colorchange 2s infinite alternate;
+      opacity:0.5;
+}
+ @keyframes bgchange {
+      0% {
+        
+        background: black;
+      }
+      
+      10% {
+        
+          background: #8e44ad;
+      }
+      
+      20% {
+        
+           background: #1abc9c;
+      }
+      
+      30% {
+        
+background: #02d300;
+      }
+      
+      40% {
+        
+background: #01ffe9;
+      }
+      
+      50% {
+        
+          background: #34495e;
+      }
+      
+      60% {
+        
+           background: blue;
+      }
+      
+      70% {
+        
+background: #4d29b9;
+      }
+      80% {
+     
+           background: #f1c40f;
+      }
+      
+      90% {
+     
+           background: #2980b9;
+      }
+      
+      100% {
+        
+           background: pink;
+      }
+    }
+
+ @keyframes bgchange2 {
+      0% {
+        
+         background: #f1c40f;  
+      }
+      
+      10% {
+         background: blue;
+         
+      }
+      
+      20% {
+        
+           background: #1abc9c;
+      }
+      
+      30% {
+        
+background: #02d300;
+      }
+      
+      40% {
+      background: black;
+
+      }
+      
+      50% {
+        
+          background: #34495e;
+      }
+      
+      60% {
+        background: #01ffe9;
+          
+      }
+      
+      70% {
+        
+background: #4d29b9;
+      }
+      80% {
+          background: pink;
+          
+      }
+      
+      90% {
+     
+           background: #2980b9;
+      }
+      
+      100% {
+        
+      
+            background: #8e44ad;
+      }
+    }
 
 
+ @keyframes colorchange {
+      0% {
+        
+        color: #b6b6ff;
+        left:10px;
+         top:15px;
+      }
+      
+      10% {
+        
+        color: #a700ec;
+         left:30px;
+          top:0px;
+      }
+      
+      20% {
+        
+        color: #00c5ff;
+         left:20px;
+         top:5px;
+      }
+      
+      30% {
+        
+        color: #ff6600;
+         left:40px;
+         top:-10px;
+      }
+      
+      40% {
+        
+        color: #ff009a;
+         left:20px;
+         top:20px;
+      }
+      
+      50% {
+        
+        color: #007fff;
+         left:60px;
+         top:-20px;
+      }
+      
+      60% {
+        
+        color: blue;
+         left:-5px;
+         top:-10px;
+      }
+      
+      70% {
+         left:5px;
+         top:-10px;
+        color: #2980b9;
+      }
+      80% {
+      left:5px;
+         top:10px
+        color: #c30ff1;
+      }
+      
+      90% {
+      left:20px;
+         top:10px
+        color: #0a0a0a;
+      }
+      
+      100% {
+         left:5px;
+         top:5px
+        color: #ff002d;
+      }
+    }
+
+
+     @keyframes colorchange2 {
+      0% {
+         left:20px;
+         top:10px
+        color: #0a0a0a;
+        
+      }
+      
+      10% {
+            color: #ff009a;
+         left:20px;
+         top:20px;
+     
+      }
+      
+      20% {
+           color: #ff6600;
+         left:10px;
+         top:10px;
+        
+      }
+      
+      30% {
+        
+     
+         color: #00c5ff;
+         left:20px;
+         top:5px;
+      }
+      
+      40% {
+        
+    
+            color: #a700ec;
+         left:30px;
+          top:0px;
+      }
+      
+      50% {
+            left:5px;
+         top:-10px;
+        color: #2980b9;
+     
+      }
+      
+      60% {
+        
+        color: blue;
+         left:-5px;
+         top:-10px;
+      }
+      
+      70% {
+      	   color: #007fff;
+         left:30px;
+         top:-10px;
+     
+      }
+      80% {
+      left:5px;
+         top:10px
+        color: #c30ff1;
+      }
+      
+      90% {
+      	color: #b6b6ff;
+        left:10px;
+         top:15px;
+     
+      }
+      
+      100% {
+         left:5px;
+         top:5px
+        color: #ff002d;
+      }
+    }
+
+    @keyframes scroll{
+  100%{
+    top:-3000px;
+    opacity:.1;
+  }
+}
