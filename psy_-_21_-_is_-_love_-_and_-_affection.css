@@ -1,5 +1,8 @@
 body{margin:0px;overflow: hidden;}
 .harekrishna{padding:5%;background:#007cff;position:absolute;width:90%;height:90%;animation: bgchange2 2s infinite alternate; }
+.summary{    display: none;}
+
+
 
 .mantra {
     position: fixed;
@@ -12,7 +15,21 @@ body{margin:0px;overflow: hidden;}
     line-height: 104px;
     color: #fff;
 }
-.logo {background:#000;animation: bgchange 5s infinite alternate;width: 40%;height: 180px;z-index: 9999999;position: fixed;top: 10%;left: 27%;text-align: center;transform: scale(0.7);}
+
+.logo {
+    background: #000;
+    animation: bgchange 5s infinite alternate;
+    width: 40%;
+    height: 180px;
+    z-index: 9999999;
+    position: fixed;
+    top: 38%;
+    left: 26%;
+    text-align: center;
+    transform: scale(0.7);
+}
+
+
 .logo p{color:#fff;font: bold italic 120px 'Century Gothic';margin: 0;position: absolute;left: 10%;}
 .logo p:nth-child(2) {
     color: red;
